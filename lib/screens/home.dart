@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: 3,
         mainAxisSpacing: 20,
-        crossAxisSpacing: 20,
+        crossAxisSpacing: 25,
         semanticChildCount: myLaps.length, //indicate the length of the grid
         children: List.generate(myLaps.length, (index) {
           return Container(
@@ -49,16 +49,16 @@ class HomePage extends StatelessWidget {
                 title: Text(
                   myLaps[index].model,
                   style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700,
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
                       color: Colors.green[400]),
                   textAlign: TextAlign.center,
                 ),
                 subtitle: Text(
                   "Company: ${myLaps[index].company} \nPrice: ${myLaps[index].price}",
                   style: const TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
                       color: Colors.black87),
                   textAlign: TextAlign.center,
                 ),
